@@ -1,0 +1,65 @@
+.App {
+  text-align: center ;
+ 
+}
+
+
+.title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.transparentButton{
+  padding: 0;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  &:focus{
+    border-color:transparent!important;
+    outline:none;
+   }
+}
+
+.background{
+ 
+  position: absolute;
+  z-index:-1;
+  left:0px;
+  top:0px;
+
+  .background-tile{
+ 
+    width: 100%;
+    height: 100%;
+    margin: -1px;
+  }
+
+  .footer-author{
+    width:75vw;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom:60px;
+    text-align: center;
+  }
+  .footer-creds{
+    width:75vw;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom:0px;
+    text-align: center;
+  }
+}
+
+
+
+

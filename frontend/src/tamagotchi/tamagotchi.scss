@@ -1,0 +1,33 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+
+.face{
+  width:25vw;
+}
+
+.statusBarTile{
+  @include media-breakpoint-only(xs) {
+    width:10vw !important;
+  }
+
+
+  @include media-breakpoint-only(sm) {
+    width:5vw !important;
+  }
+
+  @include media-breakpoint-only(md) {
+    width:5vw !important;
+  }
+
+  @include media-breakpoint-only(lg) {
+    width:10vw !important;
+  }
+  
+}
+
+.infoButtonImg{
+  width:1.5em;
+}
+

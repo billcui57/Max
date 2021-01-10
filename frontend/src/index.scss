@@ -1,0 +1,23 @@
+body {
+  background-color: #F2E8CF !important;
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+
+
+*{
+  font-family: GillSans;
+  color:#5A5F6F ;
+}
+
+
+
+@font-face{
+  font-family: "GillSans";
+ 
+  src: local('GillSans'), url(./assets/fonts/GillSansUltraBold.ttf) format('truetype');
+}

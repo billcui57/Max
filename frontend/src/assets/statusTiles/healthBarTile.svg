@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="healthBarTile" transform="translate(1 73) rotate(-90)" fill="#e56b6f">
+    <path d="M 72.5 72.5 L 72 72.5 L 0 72.5 L -0.5 72.5 L -0.5 72 L -0.5 0 L -0.5 -0.5 L 0 -0.5 L 72 -0.5 L 72.5 -0.5 L 72.5 0 L 72.5 72 L 72.5 72.5 Z" stroke="none"/>
+    <path d="M 0 0 L 0 72 L 72 72 L 72 0 L 0 0 M -1 -1 L 0 -1 L 72 -1 L 73 -1 L 73 0 L 73 72 L 73 73 L 72 73 L 0 73 L -1 73 L -1 72 L -1 0 L -1 -1 Z" stroke="none" fill="#e56b6f"/>
+  </g>
+</svg>
