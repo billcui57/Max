@@ -18,7 +18,7 @@ import "./tamagotchi.scss";
 const Tamagotchi = ({ status, showDisplayAction, dispatch }) => {
 
 
-
+  console.log(status)
 
 
 

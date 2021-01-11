@@ -1,5 +1,5 @@
-from app import app, tamagotchiCollection
+from app import app, users
 
 @app.shell_context_processor
 def make_shell_context():
-    return {'tamagotchiCollection': tamagotchiCollection}
+    return {'users': users}

@@ -1,18 +1,22 @@
-from flask.helpers import url_for
-from flask import render_template, flash, redirect
-from app import app, tamagotchiCollection
-from flask import request
-from werkzeug.urls import url_parse
-from datetime import datetime
-from bson.json_util import dumps, loads 
+
+from flask_jwt import JWT, jwt_required, current_identity
+from werkzeug.security import safe_str_cmp
+from app import app, users
+import json
+from bson.objectid import ObjectId
 
 
+def newEncoder(o):
+    if type(o) == ObjectId:
+        return str(o)
+    return o.__str__
 
 
-# @app.route('/tamagotchi', methods = ["GET"])
-# def getAllTamagotchi():
-#   return dumps(list(tamagotchiCollection.find({})))
-  
+@app.route('/api/users/<username>', methods=['GET'])
+def getUser(username):
+    return json.dumps(users.find_one({"username": username}),  default=newEncoder)
 
 
-@app.route('/login')
+@app.route('/api/users/<username>', methods=['PATCH'])
+def updateUser(username):
+    

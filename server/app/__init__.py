@@ -1,6 +1,8 @@
-from flask import Flask
+from flask import Flask, Response, request
 from flask_pymongo import PyMongo
 from config import Config
+
+from flask_jwt import JWT, jwt_required,current_identity
 
 
 app = Flask(__name__)
@@ -10,7 +12,10 @@ mongo = PyMongo(app)
 
 db = mongo.db
 
-tamagotchiCollection = db.get_collection("Tamagotchi")
-
+users = db.get_collection("Users")
 
 from app import routes
+
+from app.security import authenticate, identity
+
+jwt = JWT(app, authenticate,identity)
